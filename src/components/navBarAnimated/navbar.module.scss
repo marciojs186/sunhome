@@ -7,6 +7,8 @@
 	max-width: 1000px;
 	justify-content: space-between;
 	text-align: center;
+  flex-direction: row;
+  
 
   @media (max-width: 500px){
     display: flex;
@@ -16,11 +18,11 @@
 
 }
 .li {
-	padding: 1rem 1rem 1.15rem;
+	padding: 1rem 2rem 1.15rem 0rem;
   //text-transform: uppercase;
   cursor: pointer;
   color: #ebebeb;
-	min-width: 80px;
+	min-width: 70px;
 	margin: auto;
 
   @media (max-width: 500px){
@@ -69,4 +71,16 @@
   padding: 8px 20px;
   color: #ccc;
   text-decoration: none;
+}
+
+.icon {
+  //display: flex;
+  
+   width: 11%;
+  // //height: 4%;
+   left: 15%;
+  // position: absolute;
+  // //padding-top: 5%;
+  // //margin-right: 18%;
+  // height: 30%;
 }

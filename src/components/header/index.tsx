@@ -23,13 +23,7 @@ export function Header() {
   return (
     <>
       <header className={styles.headerContainer}>
-        {/* <header
-        id="navbar"
-        className={`${
-          theme === 2 ? styles.headerContainerB : styles.headerContainer
-        }`}
-      > */}
-        <NavbarAnimated closeVisible={() => {}} marginLeft={0} />
+        <NavbarAnimated closeVisible={() => {}} marginLeft={80} />
       </header>
     </>
   );
