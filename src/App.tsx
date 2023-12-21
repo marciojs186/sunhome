@@ -43,7 +43,7 @@ function App() {
               src="/images/placaEnergy.svg"
               //alt="Satisfação"
               width={"10%"}
-              height={"80%"}
+              height={63}
             />
             LOGO -- AQUECEDOR PARA BANHO -- AQUECEDOR PARA PISCINA -- PRÉDIOS e
             CONDOMÍNIOS
