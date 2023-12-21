@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./App.module.scss";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
+import { Carossel } from "./components/caroussel";
 
 function App() {
   const [theme, setTheme] = useState(1);
@@ -26,31 +27,31 @@ function App() {
       <div className="App">
         <Header />
         <main className={styles.main}>
+          <div className={styles.headerContainer}>
+            <div>
+              <Carossel />
+            </div>
+          </div>
           <header
             id="navbar"
             className={`${
               theme === 2 ? styles.headerContainerB : styles.headerContainer
             }`}
-          >
-            <div>
-              <h2>
-                LOGO ----- AQUECEDOR PARA BANHO ----- AQUECEDOR PARA PISCINA
-                ----- PRÉDIOS e CONDOMÍNIOS
-              </h2>
-            </div>
-          </header>
-          <div>
+          ></header>
+          <div className={styles.titleLog}>
             <img
-              src="/images/ImagesCarousel/eficiencia.jpg"
-              alt="Satisfação"
-              width={"100%"}
-              height={"100%"}
+              src="/images/placaEnergy.svg"
+              //alt="Satisfação"
+              width={"10%"}
+              height={"80%"}
             />
-          </div>
-          <div>
-            <h3>Thema...</h3>
+            LOGO -- AQUECEDOR PARA BANHO -- AQUECEDOR PARA PISCINA -- PRÉDIOS e
+            CONDOMÍNIOS
           </div>
         </main>
+        {/* <div>
+          <h5>Themh7...</h5>
+        </div> */}
       </div>
       <Footer />
     </>

@@ -23,7 +23,7 @@ export function Header() {
   return (
     <>
       <header className={styles.headerContainer}>
-        <NavbarAnimated closeVisible={() => {}} marginLeft={80} />
+        <NavbarAnimated closeVisible={() => {}} marginLeft={100} />
       </header>
     </>
   );

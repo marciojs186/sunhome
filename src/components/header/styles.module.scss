@@ -1,13 +1,13 @@
 
 .headerContainer{
-  height: 1rem;
+  height: 2.4rem;
   text-align: center;
   align-items: center;
   position: fixed;
   padding: 0.6em ;
   color: #12e;
  //background-color: #197c23;
- background: linear-gradient(45deg, rgba(23,60,99,1) 0%, rgb(21, 151, 21) 47%, rgba(48,118,142,1) 100%);
+ background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(21, 151, 21) 47%, rgb(29, 93, 161)  100%);
  box-shadow:  rgba(0, 38, 109, 0.9) 0px -0.25px 2px 1.2px;
  display: flex;
  justify-content: center;
@@ -34,6 +34,8 @@
   z-index: 10;
   transition: 0.8s;
   background-color: rgba(0, 38, 109, 0.5);
+  z-index: 10;
+
 
   @media (max-width: 500px){
     display: none;
