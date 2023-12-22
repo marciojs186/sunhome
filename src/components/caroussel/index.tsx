@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./carousel.module.scss";
-import {
-  BsFillArrowRightCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
+import { AiFillRightSquare, AiFillLeftSquare } from "react-icons/ai";
 
 export function Carossel() {
   const [theme, setTheme] = useState("");
@@ -14,14 +11,14 @@ export function Carossel() {
   const nextIcon = (
     <span>
       <h1>
-        <BsFillArrowRightCircleFill />
+        <AiFillRightSquare size={70} />
       </h1>
     </span>
   );
   const prevIcon = (
     <span>
       <h1>
-        <BsFillArrowLeftCircleFill />
+        <AiFillLeftSquare size={70} />
       </h1>
     </span>
   );

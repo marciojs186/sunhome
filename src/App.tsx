@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 import styles from "./App.module.scss";
+import { Button } from "./components/buttons/animatedButton";
+import { WhatsAppButton } from "./components/buttons/whatsappButton";
+import { ButtonFixed } from "./components/buttons/buttonFixed";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { Carossel } from "./components/caroussel";
@@ -10,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 70;
+      const show = window.scrollY > 220;
       if (show) {
         setTheme(2);
       } else {
@@ -45,8 +48,39 @@ function App() {
               width={"10%"}
               height={63}
             />
-            LOGO -- AQUECEDOR PARA BANHO -- AQUECEDOR PARA PISCINA -- PRÉDIOS e
-            CONDOMÍNIOS
+            <Button
+              type={5}
+              width={240}
+              heigth={44}
+              text={"Aquecedor para Banho"}
+              onClick={() => alert("clicou")}
+              marginLeft={"10%"}
+            />
+            <Button
+              type={5}
+              width={240}
+              heigth={44}
+              text={"Aquecedor para Piscina"}
+              onClick={() => alert("clicou")}
+              marginLeft={"90"}
+            />
+            <Button
+              type={5}
+              width={240}
+              heigth={44}
+              text={"Prédios e Condomínios"}
+              onClick={() => alert("clicou")}
+              marginLeft={"90"}
+            />
+            <WhatsAppButton />
+            <ButtonFixed
+              type={5}
+              width={188}
+              heigth={35}
+              fontSize={18}
+              text={"Solicite Orçamento"}
+              onClick={() => alert("clicou")}
+            />
           </div>
         </main>
         {/* <div>

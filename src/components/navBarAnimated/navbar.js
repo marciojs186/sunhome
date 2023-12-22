@@ -40,6 +40,19 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
           </h6>
           <h6 className={styles.li} onClick={() => Navigation("./servicos")}>
             <img
+              src="/images/icon-phone.png"
+              style={{
+                marginTop: 1,
+                marginLeft: -27,
+                width: 21,
+                height: 21,
+                position: "absolute",
+              }}
+            />
+            (11) 99999-9999
+          </h6>
+          <h6 className={styles.li} onClick={() => Navigation("./servicos")}>
+            <img
               src="/images/phone-mobile.svg"
               style={{
                 marginTop: -1,
@@ -49,7 +62,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
                 position: "absolute",
               }}
             />
-            (11) 99999-9999
+            (11) 9999-9999
           </h6>
           <h6 className={styles.li} onClick={() => Navigation("./quemsomos")}>
             <img
@@ -69,7 +82,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
               <img
                 src="/images/icon-phone.png"
                 style={{
-                  marginTop: -5.5,
+                  marginTop: -6.5,
                   padding: 4,
                   borderRadius: 8,
                   background: "white",
@@ -89,7 +102,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
             <img
               src="/images/toogle.svg"
               style={{
-                marginTop: "-25%",
+                marginTop: "-18%",
                 width: 33,
                 height: 33,
               }}
