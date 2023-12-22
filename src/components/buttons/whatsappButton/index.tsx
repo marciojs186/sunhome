@@ -2,20 +2,16 @@ import styles from "./styles.module.scss";
 //import Link from 'next/link'
 
 export function WhatsAppButton() {
-  // let url =
-  //   "https://api.whatsapp.com/send?phone=5511946458365&text=Ol%C3%A1!%20gostaria%20de%20informa%C3%A7%C3%B5es";
+  let url =
+    "https://api.whatsapp.com/send?phone=5511980851787&text=Ol%C3%A1.+Encontrei+a+SolarHome+pelo+website+e+gostaria+de+receber+atendimento.&type=phone_number&app_absent=0";
+
+  const goToWhats = () => {
+    window.open(url)
+  }
 
   return (
     <div className={styles.main}>
-      <button className={styles.container} onClick={() => alert("zappp")} />
-      {/* <button className={styles.container} onClick={()=> <Link href='www.uol.com.br'/>}/> */}
-      {/* <Link href={url}>
-        {
-          <a target="_blank">
-            <div className={styles.container}></div>
-          </a>
-        }
-      </Link> */}
+      <button className={styles.container} onClick={() => goToWhats()} />
     </div>
   );
 }
