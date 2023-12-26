@@ -36,7 +36,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
                 position: "absolute",
               }}
             />
-            contato@sunhome.com.br
+            contato@solarhome.com.br
           </h6>
           <h6 className={styles.li} onClick={() => Navigation("./servicos")}>
             <img
@@ -49,7 +49,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
                 position: "absolute",
               }}
             />
-            (11) 99999-9999
+            (11) 9999-9999
           </h6>
           <h6 className={styles.li} onClick={() => Navigation("./servicos")}>
             <img
@@ -62,7 +62,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
                 position: "absolute",
               }}
             />
-            (11) 9999-9999
+            (11) 98085-1787
           </h6>
           <h6 className={styles.li} onClick={() => Navigation("./quemsomos")}>
             <img

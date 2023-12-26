@@ -11,7 +11,7 @@ export function Footer() {
     // </footer>
     <div className={styles.footerContainer}>
       <div className={styles.textContent}>
-        <p>SUN HOME - ENERGIA LIMPA, ECONOMIA E CONFORTO.</p>
+        <p>SOLAR HOME - ENERGIA LIMPA, ECONOMIA E CONFORTO.</p>
         <p>Fale conosco pelo Whatsapp.</p>
         <span>
           <div className={styles.imagem}>
@@ -22,11 +22,11 @@ export function Footer() {
               height={25}
             />
           </div>
-          11 94645-8365
+          11 98085-1787
         </span>
       </div>
       <footer className={styles.footer}>
-        <p>&copy; SUN HOME Todos os direitos reservados.</p>
+        <p>&copy; SOLAR HOME Todos os direitos reservados.</p>
       </footer>
     </div>
   );

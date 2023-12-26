@@ -3,11 +3,11 @@ import styles from "./styles.module.scss";
 
 export function WhatsAppButton() {
   let url =
-    "https://api.whatsapp.com/send?phone=5511980851787&text=Ol%C3%A1.+Encontrei+a+SolarHome+pelo+website+e+gostaria+de+receber+atendimento.&type=phone_number&app_absent=0";
+    "https://api.whatsapp.com/send?phone=5511980851787&text=Ol%C3%A1!%20gostaria%20de%20informa%C3%A7%C3%B5es!";
 
   const goToWhats = () => {
-    window.open(url)
-  }
+    window.open(url);
+  };
 
   return (
     <div className={styles.main}>

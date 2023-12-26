@@ -42,36 +42,37 @@ function App() {
             }`}
           ></header>
           <div className={styles.titleLog}>
-            <img
-              src="/images/placaEnergy.svg"
-              //alt="Satisfação"
-              width={"10%"}
-              height={63}
-            />
-            <Button
-              type={5}
-              width={240}
-              heigth={44}
-              text={"Aquecedor para Banho"}
-              onClick={() => alert("clicou")}
-              marginLeft={"10%"}
-            />
-            <Button
-              type={5}
-              width={240}
-              heigth={44}
-              text={"Aquecedor para Piscina"}
-              onClick={() => alert("clicou")}
-              marginLeft={"90"}
-            />
-            <Button
-              type={5}
-              width={240}
-              heigth={44}
-              text={"Prédios e Condomínios"}
-              onClick={() => alert("clicou")}
-              marginLeft={"90"}
-            />
+            <div className={styles.containerButton}>
+              <img
+                src="/images/solar-meta.png"
+                //alt="Satisfação"
+                width={"11%"}
+              />
+              <Button
+                type={5}
+                width={240}
+                heigth={44}
+                text={"Aquecedor para Banho"}
+                onClick={() => alert("clicou")}
+                marginLeft={"12%"}
+              />
+              <Button
+                type={5}
+                width={240}
+                heigth={44}
+                text={"Aquecedor para Piscina"}
+                onClick={() => alert("clicou")}
+                //marginLeft={"90"}
+              />
+              <Button
+                type={5}
+                width={240}
+                heigth={44}
+                text={"Prédios e Condomínios"}
+                onClick={() => alert("clicou")}
+                // marginLeft={"90"}
+              />
+            </div>
             <WhatsAppButton />
             <ButtonFixed
               type={5}
