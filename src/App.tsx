@@ -8,6 +8,8 @@ import { ButtonFixed } from "./components/buttons/buttonFixed";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { Carossel } from "./components/caroussel";
+import { QuemSomos } from "./containers/quemSomos";
+import { Orcamento } from "./containers/orcamentos";
 
 function App() {
   const [theme, setTheme] = useState(1);
@@ -31,7 +33,7 @@ function App() {
       <div className="App">
         <Header />
         <main className={styles.main}>
-          <div className={styles.headerContainer}>
+          <div className={styles.headerBase}>
             <div>
               <Carossel />
             </div>
@@ -41,8 +43,7 @@ function App() {
             className={`${
               theme === 2 ? styles.headerContainerB : styles.headerContainer
             }`}
-          ></header>
-          <div className={styles.titleLog}>
+          >
             <div className={styles.containerButton}>
               <img
                 src="/images/solar-meta.png"
@@ -110,6 +111,8 @@ function App() {
                 // marginLeft={"90"}
               />
             </div>
+          </header>
+          <div className={styles.titleLog}>
             <WhatsAppButton />
             <ButtonFixed
               type={5}
@@ -121,9 +124,8 @@ function App() {
             />
           </div>
         </main>
-        <div className={styles.containerOrcamento}>
-          <h5>Orçamento...</h5>
-        </div>
+        <QuemSomos />
+        <Orcamento />
       </div>
       <Footer />
     </>
