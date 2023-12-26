@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from "react";
 
 import styles from "./App.module.scss";
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 220;
+      const show = window.scrollY > 320;
       if (show) {
         setTheme(2);
       } else {
@@ -45,8 +46,19 @@ function App() {
             <div className={styles.containerButton}>
               <img
                 src="/images/solar-meta.png"
-                //alt="Satisfação"
+                alt="Satisfação"
                 width={"11%"}
+              />
+              <img
+                src="/images/banho.svg"
+                style={{
+                  marginTop: "2.4%",
+                  marginLeft: "12.5%",
+                  width: 22,
+                  height: 22,
+                  position: "absolute",
+                  zIndex: 3,
+                }}
               />
               <Button
                 type={5}
@@ -55,6 +67,18 @@ function App() {
                 text={"Aquecedor para Banho"}
                 onClick={() => alert("clicou")}
                 marginLeft={"12%"}
+                paddingLeft={"1.4%"}
+              />
+              <img
+                src="/images/piscina.svg"
+                style={{
+                  marginTop: "2.5%",
+                  marginLeft: 8,
+                  width: 23,
+                  height: 21,
+                  position: "absolute",
+                  zIndex: 3,
+                }}
               />
               <Button
                 type={5}
@@ -62,7 +86,19 @@ function App() {
                 heigth={44}
                 text={"Aquecedor para Piscina"}
                 onClick={() => alert("clicou")}
+                paddingLeft={"1.4%"}
                 //marginLeft={"90"}
+              />
+              <img
+                src="/images/predio.svg"
+                style={{
+                  marginTop: "2.5%",
+                  marginLeft: 9,
+                  width: 24,
+                  height: 19,
+                  position: "absolute",
+                  zIndex: 3,
+                }}
               />
               <Button
                 type={5}
@@ -70,6 +106,7 @@ function App() {
                 heigth={44}
                 text={"Prédios e Condomínios"}
                 onClick={() => alert("clicou")}
+                paddingLeft={"1.4%"}
                 // marginLeft={"90"}
               />
             </div>
@@ -84,9 +121,9 @@ function App() {
             />
           </div>
         </main>
-        {/* <div>
-          <h5>Themh7...</h5>
-        </div> */}
+        <div className={styles.containerOrcamento}>
+          <h5>Orçamento...</h5>
+        </div>
       </div>
       <Footer />
     </>

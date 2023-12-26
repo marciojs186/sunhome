@@ -1,15 +1,8 @@
 .ul{
 	display: flex;
 	width: 100%;
-	//height: 6rem;
-	//margin: auto;
-  //margin-left: 29px;
-  //margin-right: 10rem;
-	//max-width: 1000px;
-	//justify-content: space-between;
 	text-align: center;
   margin: auto;
-  //background: red;
   flex-direction: row;
   z-index: 15;
 
@@ -48,9 +41,9 @@
 }
 .listAbout{
 width: 8rem;
-height: 12rem;
+height: 13rem;
 margin-top: 0.15rem;
-background-color: #2F3ADB;
+background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(8, 124, 60)  47%, rgb(29, 93, 161)  100%);
 border-top: solid 2px rgb(7, 45, 102);
 text-align: start;
 padding-top: 1rem;
@@ -72,12 +65,12 @@ overflow: hidden;
 }
 .closeListAbout{
 width: 8rem;
-height: 0;
+height: 13;
 margin-top: 0.15rem;
 border-top: solid 2px rgb(7, 45, 102);
 border-bottom-right-radius: 5px;
 border-bottom-left-radius: 5px;
-background-color: #2F3ADB;
+background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(8, 124, 60) 47%, rgb(29, 93, 161)  100%);
 text-align: start;
 padding-top: 1rem;
 padding-left: 0.9rem;
@@ -155,6 +148,7 @@ overflow: hidden;
 }
 
 .listItens{
+padding-bottom: 0.2rem;
   
 }
 

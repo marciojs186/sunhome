@@ -6,6 +6,8 @@ export function Button({
   heigth = 58 || "0",
   fontSize = 18 || "22",
   marginLeft = 0 || "0",
+  marginTop = 0 || "0",
+  paddingLeft = 0 || "0",
   onClick = () => {},
 }) {
   let renderButton = (
@@ -25,6 +27,8 @@ export function Button({
             alignSelf: "center",
             fontSize: fontSize,
             marginLeft: marginLeft,
+            marginTop: marginTop,
+            paddingLeft: paddingLeft,
           }}
           onClick={onClick}
         >
@@ -76,6 +80,8 @@ export function Button({
             fontSize: fontSize,
             background: "transparent",
             marginLeft: marginLeft,
+            marginTop: marginTop,
+            paddingLeft: paddingLeft,
           }}
           onClick={onClick}
         >
