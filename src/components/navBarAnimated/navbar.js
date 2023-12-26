@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+import { useState } from "react";
 import styles from "./navbar.module.scss";
 
 export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
@@ -7,6 +9,20 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
       //Router.push(url);
     }, 500);
   };
+
+  const [visibleList, setVisibleList] = useState(false)
+  const [viewClose, setViewClose] =  useState(false)
+
+  const closeView = () => {
+    const time = visibleList ? 500 : 0
+    setViewClose(!visibleList)
+    console.log("TIME: ", time)
+    setTimeout(() => {
+
+      setVisibleList(!visibleList)
+      
+    }, time);
+  }
 
   return (
     <>
@@ -25,7 +41,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
             />
             Google Reviews
           </h6>
-          <h6 className={styles.li} onClick={() => Navigation("./orcamento")}>
+          <h6 className={styles.li} style={{minWidth:250}} onClick={() => Navigation("./orcamento")}>
             <img
               src="/images/emailicon.svg"
               style={{
@@ -64,7 +80,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
             />
             (11) 98085-1787
           </h6>
-          <h6 className={styles.li} onClick={() => Navigation("./quemsomos")}>
+          <h6 className={styles.li} style={{minWidth:100}} onClick={() => Navigation("./quemsomos")}>
             <img
               src="/images/whatsapp-icon.svg"
               style={{
@@ -77,8 +93,7 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
             />
             Whatsapp
           </h6>
-          <div className={styles.li}>
-            <div>
+          <div className={styles.li} style={{minWidth:35, marginRight: 20}}>
               <img
                 src="/images/icon-phone.png"
                 style={{
@@ -92,21 +107,27 @@ export function NavbarAnimated({ marginLeft = 5, closeVisible }) {
                   position: "absolute",
                 }}
               />
-            </div>
           </div>
 
           <h6 className={styles.li} onClick={() => Navigation("./quemsomos")}>
             <div className={styles.orca}>Pedir Orçamento</div>
           </h6>
-          <div className={styles.li}>
+          <div className={styles.listOptions} style={{marginLeft: '3rem'}} onClick={()=> closeView()}>
             <img
               src="/images/toogle.svg"
               style={{
-                marginTop: "-18%",
                 width: 33,
                 height: 33,
               }}
             />
+             <div className={ !viewClose ? styles.closeListAbout : styles.listAbout } hidden={!visibleList}>
+              <h6 className={styles.listItens}>Sobre nós</h6>
+              <h6 className={styles.listItens}>Fale conosco</h6>
+              <h6 className={styles.listItens}>Fale conosco</h6>
+              <h6 className={styles.listItens}>Fale conosco</h6>
+              <h6 className={styles.listItens}>Fale conosco</h6>
+              <h6 className={styles.listItens}>Fale conosco</h6>
+             </div>
           </div>
         </ul>
       </div>

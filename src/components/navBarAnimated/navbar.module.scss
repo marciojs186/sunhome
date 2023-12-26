@@ -20,16 +20,79 @@
   }
 
 }
+
+.listOptions{
+  height: 5rem;
+  width: 5rem;
+  margin-top: 0.25rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: 0.8s;
+  background-color: rgba(0, 38, 109);
+  
+  z-index: 10;
+  &{animation: initalAnim 10s cubic-bezier(.05,.67,0,1.2) forwards;}
+}
+
+@keyframes openList{
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 6.5rem;
+  }
+}
+.listAbout{
+width: 8rem;
+height: 12rem;
+margin-top: 0.15rem;
+background-color: #2F3ADB;
+border-top: solid 2px rgb(7, 45, 102);
+text-align: start;
+padding-top: 1rem;
+padding-left: 0.9rem;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+animation: openList 0.5s ease-in-out;
+overflow: hidden;
+}
+
+
+@keyframes closeList{
+  0%{
+    height: 12rem;
+  }
+  100%{
+    height: 0;
+  }
+}
+.closeListAbout{
+width: 8rem;
+height: 0;
+margin-top: 0.15rem;
+border-top: solid 2px rgb(7, 45, 102);
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+background-color: #2F3ADB;
+text-align: start;
+padding-top: 1rem;
+padding-left: 0.9rem;
+animation: closeList 0.5s ease-in-out;
+overflow: hidden;
+}
+
 .li {
-	padding: 3rem 1rem 1rem 2.4rem;
-  //text-transform: uppercase;
   cursor: pointer;
   color: #ebebeb;
-	min-width: 130px;
-	margin: auto;
-  //background: green;
-  height: 1px;
-  padding-top: 0%;
+	min-width: 8.5rem;
+  margin-left: 25px;
+  margin-top: 58px;
+  height: 25px;
+  background-color: transparent;
 
   @media (max-width: 500px){
     font-size: 1.2rem;
@@ -39,11 +102,9 @@
 }
 
 .li:hover {
-  //background-image: url('../../../public/images/imagensNav/btAzul.png');
   background-size: 100% 100%;
   color: #ffffff;
   animation: spring 300ms ease-out;
-  //text-shadow: 0 -1px 0 rgb(255, 135, 175);
 	font-weight: bold;
   z-index: 10;
 }
@@ -70,6 +131,11 @@
   }
 }
 
+@keyframes initalAnim{
+  from{transform: translate(0, 500px); filter: opacity(0) brightness(2) opacity(0) blur(6px);}
+  to{transform: translate(0, 0px); filter: opacity(100%) brightness(1) opacity(1) blur(0) ;}
+}
+
 .shameless-plug{
   position: absolute;
   bottom: 10px;
@@ -86,4 +152,29 @@
   width: 130%;
   border-radius: 5px;
   background: #2F3ADB;
+}
+
+.listItens{
+  
+}
+
+.listItens:hover{
+  color: #7f86ec;
+  font-weight: 700;
+}
+
+.listOptions {
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 7rem;
+  margin-left: 25px;
+  margin-top: 52px;
+  height: 5rem;
+  background-color: transparent;
+
+  @media (max-width: 500px){
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
 }
