@@ -113,21 +113,41 @@
 }
 
 .fourth {
-  padding: 10px;
-  border-radius: 8px;
- // border-color: #3c7ee7;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #000;
+  background: linear-gradient(45deg, rgb(56, 207, 76) 0%, rgb(56, 231, 56) 47%, rgb(56, 207, 76)   100%);
   font-weight: 500;
-  color: #3c7ee7;
-  background-image: -webkit-linear-gradient(45deg, #3c7ee7 50%, transparent 50%);
-  background-image: linear-gradient(45deg, #3c7ee7 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 500ms ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+   -webkit-transition: color 100ms ease-in-out;
+   transition: color 100ms ease-in-out;
 }
+.fourth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: rgb(56, 207, 76); 
+  z-index: -1;
+   -webkit-transition: width 100ms ease-in-out;
+   transition: width 100ms ease-in-out;
+}
+
+.fourth:hover:after {
+  width: 100%;
+}
+
 .fourth:hover {
   background-position: 0;
-  color: #fff;
+  font-weight: 600;
+  color: #FFF;
 }
 
 .fifth {
@@ -144,6 +164,7 @@
    -webkit-transition: color 100ms ease-in-out;
    transition: color 100ms ease-in-out;
 }
+
 .fifth:after {
   content: '';
   position: absolute;
@@ -180,8 +201,8 @@
   background-position: 0% 0%;
   background-size: 210%;
   font-weight: 600;
-  -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
-  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  //-webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  //transition: background 150ms ease-in-out, color 150ms ease-in-out;
 }
 .sixth:hover {
   color: rgb(255, 255, 255);

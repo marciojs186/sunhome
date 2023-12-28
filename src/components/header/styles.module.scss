@@ -4,17 +4,14 @@
   align-items: center;
   position: fixed;
   color: #12e;
- //background-color: #197c23;
- background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(21, 151, 21) 47%, rgb(29, 93, 161)  100%);
- box-shadow:  rgba(0, 38, 109, 0.9) 0px -0.25px 2px 1.2px;
- display: flex;
- justify-content: center;
- //bottom: 0;
- top: 0;
+  background-color: rgb(72, 99, 28);
+  box-shadow:  rgba(0, 38, 109, 0.9) 0px -0.25px 2px 1.2px;
+  display: flex;
+  justify-content: center;
+  top: 0;
   left: 0;
   right: 0;
  transition: 0.8s;
-  //background-color: rgba(61, 99, 155, 0.92);
   z-index: 10;
 
  @media (max-width: 499px){

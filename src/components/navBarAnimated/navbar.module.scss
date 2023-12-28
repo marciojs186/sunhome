@@ -43,8 +43,8 @@
 width: 8rem;
 height: 13rem;
 margin-top: 0.15rem;
-background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(8, 124, 60)  47%, rgb(29, 93, 161)  100%);
-border-top: solid 2px rgb(7, 45, 102);
+background-color: rgb(72, 99, 28);
+border-top: solid 2px rgb(55, 77, 21);
 text-align: start;
 padding-top: 1rem;
 padding-left: 0.9rem;
@@ -63,14 +63,15 @@ overflow: hidden;
     height: 0;
   }
 }
+
 .closeListAbout{
 width: 8rem;
 height: 13;
 margin-top: 0.15rem;
-border-top: solid 2px rgb(7, 45, 102);
+border-top: solid 2px rgb(55, 77, 21);;
 border-bottom-right-radius: 5px;
 border-bottom-left-radius: 5px;
-background: linear-gradient(45deg, rgb(29, 93, 161) 0%, rgb(8, 124, 60) 47%, rgb(29, 93, 161)  100%);
+background-color: rgb(72, 99, 28);
 text-align: start;
 padding-top: 1rem;
 padding-left: 0.9rem;
@@ -138,13 +139,21 @@ overflow: hidden;
   text-decoration: none;
 }
 
-.orca {
+.orcamento {
   padding-top: 5%;
   padding-bottom: 5% ;
+  color:  rgb(206, 204, 204);
   margin-top: -8.1px;
   width: 130%;
   border-radius: 5px;
-  background: #2F3ADB;
+  background-color: rgb(44, 155, 58); 
+
+}
+.orcamento:hover{
+  color:rgb(216, 216, 216);
+  background-color: rgb(53, 182, 70); 
+  font-weight: 500;
+  border-radius: 9px;
 }
 
 .listItens{

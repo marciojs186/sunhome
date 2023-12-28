@@ -6,6 +6,8 @@ export function ButtonFixed({
   heigth = 58 || "0",
   fontSize = 18 || "22",
   marginLeft = 0 || "0",
+  marginRight = 0 || "0",
+  left = 0 || "0",
   onClick = () => {},
 }) {
   let renderButton = (
@@ -58,7 +60,14 @@ export function ButtonFixed({
       renderButton = (
         <button
           className={styles.fourth}
-          style={{ width: width, height: heigth, alignSelf: "center" }}
+          style={{
+            width: width,
+            height: heigth,
+            alignSelf: "center",
+            marginLeft: marginLeft,
+            marginRight: marginRight,
+            left: left,
+          }}
           onClick={onClick}
         >
           {text}
@@ -74,7 +83,6 @@ export function ButtonFixed({
             height: heigth,
             alignSelf: "center",
             fontSize: fontSize,
-            //background: "#2F3ADB",
             marginLeft: marginLeft,
           }}
           onClick={onClick}

@@ -100,7 +100,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
         </div>
 
         <h6 className={styles.li} onClick={() => {}}>
-          <div className={styles.orca}>Pedir Orçamento</div>
+          <div className={styles.orcamento}> Pedir Orçamento</div>
         </h6>
         <div
           className={styles.listOptions}

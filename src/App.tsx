@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 
 import styles from "./App.module.scss";
-import { Button } from "./components/buttons/animatedButton";
 import { WhatsAppButton } from "./components/buttons/whatsappButton";
 import { ButtonFixed } from "./components/buttons/buttonFixed";
 import { Header } from "./components/header";
@@ -10,6 +9,7 @@ import { SubHeader } from "./components/subHeader";
 import { Footer } from "./components/footer";
 import { Carossel } from "./components/caroussel";
 import { QuemSomos } from "./containers/quemSomos";
+import { Servicos } from "./containers/servicos";
 import { Orcamento } from "./containers/orcamentos";
 
 function App() {
@@ -37,6 +37,7 @@ function App() {
           </div>
         </main>
         <QuemSomos />
+        <Servicos />
         <Orcamento />
       </div>
       <Footer />

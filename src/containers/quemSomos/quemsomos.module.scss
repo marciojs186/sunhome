@@ -1,9 +1,72 @@
 .container{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background-color: gray;
-    //z-index: 3;
+    height: 65vh;
+    background-color: rgb(72, 99, 28);
 }
+
+.containerImg{
+    width: 48%;
+    height: 100%;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
+.containerTitle{
+    display: flex;
+   margin-left: 25%;
+    padding: 0rem 0rem 0rem 3rem;
+    margin-top: -1%;
+    margin-right: 13%;
+}
+
+  .contentOrcamento{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 157%;
+  }
+
+  .titleOrca{
+    width: 65%;
+    color: #EEE;
+    margin-top: 2.2%;
+    position: relative;
+    left: 23%;
+    z-index: 1;
+  }
+
+  .buttonOrca{
+    width: 85%;
+    top: 60%;
+    height: 2rem;
+    position: absolute;
+    align-items: flex-end;
+    align-self: flex-end;
+    align-content: flex-end;
+    justify-content: end;
+  }
+  .infoStyle{
+    span{
+      font-size: 2rem;
+      font-weight: 700;
+      color: #EEE;
+    }
+    p{
+      font-size: 2;
+      font-weight: 500;
+      color: #EEE;
+    }
+    border-radius: 12px;
+  }
+  
+  .infoStyle :hover{
+    transition: 500ms;
+    color: #FFF;
+  }
+  .h5{
+    font-weight: 400;
+  }
+
+
