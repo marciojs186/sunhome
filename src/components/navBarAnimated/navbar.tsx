@@ -31,7 +31,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
           />
           Google Reviews
         </h6>
-        <h6 className={styles.li} style={{ minWidth: 250 }} onClick={() => {}}>
+        <h6 className={styles.li} style={{ minWidth: 220 }} onClick={() => {}}>
           <img
             src="/images/emailBranco.svg"
             style={{
@@ -44,7 +44,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
           />
           contato@solarhome.com.br
         </h6>
-        <h6 className={styles.li} onClick={() => {}}>
+        {/* <h6 className={styles.li} onClick={() => {}}>
           <img
             src="/images/phoneWhite.svg"
             style={{
@@ -56,7 +56,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
             }}
           />
           (11) 9999-9999
-        </h6>
+        </h6> */}
         <h6 className={styles.li} onClick={() => {}}>
           <img
             src="/images/smartphoneIcon.svg"

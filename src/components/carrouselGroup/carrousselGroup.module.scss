@@ -1,14 +1,15 @@
 .infoStyle{
-    // transform: translate(0, 100px);
-    // filter: opacity(0) brightness(1);
     span{
       font-size: 2.3rem;
       font-weight: 500;
       text-shadow: 2px 2px 3px #042b57;
     }
     p{
-      font-size: 1rem;
-      width: 80px;
+      font-size: 13px;
+      position: absolute;
+      top: 20%;
+      padding: 0px 5px 0px 5px;
+      left: -17%;
       border-radius: 13px;
       background-color: rgb(72, 99, 28);
       font-weight: 400;
@@ -16,11 +17,34 @@
 }
 
 .containerItens{
-    width: 50vh;
+    width: 48vh;
     padding: 0 2vh;
-    background-color: aqua;
     height: auto;
-
+}
+.containerSubTitle{ 
+  width: 100%;
+  position: absolute;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  top: 66px;
+  justify-content: center;
+}
+.containerCity{ 
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  top: -3px;
+  left: 32%;
+  justify-content: center;
+}
+.containerButton{ 
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -36,4 +60,5 @@
 
 .container{
     display: flex;
+    justify-content: center;
 }

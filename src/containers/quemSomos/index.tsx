@@ -8,7 +8,8 @@ export function QuemSomos() {
   return (
     <div className={styles.container}>
       <div className={styles.containerTitulo}>
-        <h1 className={styles.h1}>QUEM SOMOS</h1>
+        <h1 className={styles.h1}>QUEM</h1>
+        <h1 className={styles.h1}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOMOS</h1>
         <hr style={{ width: 150, color: "#FFF" }} />
       </div>
       <div className={styles.containerImg}>

@@ -9,9 +9,12 @@
 
 .containerSlider{
    height: auto;
-   padding: 0px 10px 20px 10px;
+   width: 100%;
+   padding: 0px 10px 40px 10px;
    align-items: center;
    background-color: rgb(61, 65, 54);
+   justify-content: center;
+   align-items: center;
 }
 
 .containerTitle{

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/esm/Carousel";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { Button } from "../buttons/animatedButton";
 import styles from "./carrousselGroup.module.scss";
 
 function CarouselGroup() {
@@ -9,24 +10,72 @@ function CarouselGroup() {
 
   let imagesList = [
     [
-      { src: "/images/ImagesCarousel/placadetalhe.jpg", title: "Teste 1" },
-      { src: "/images/ImagesCarousel/placatelhado.jpg", title: "Teste 2" },
-      { src: "/images/ImagesCarousel/placadetalhe.jpg", title: "Teste 3" },
+      {
+        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        cidade: "São Paulo - SP",
+      },
+      {
+        src: "/images/ImagesCarousel/checkplaca.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        cidade: "São Paulo - SP",
+      },
+      {
+        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        cidade: "São Paulo - SP",
+      },
     ],
     [
-      { src: "/images/ImagesCarousel/satisfacao.jpg", title: "Teste 1" },
-      { src: "/images/ImagesCarousel/placahome.jpg", title: "Teste 2" },
-      { src: "/images/ImagesCarousel/monitorar.jpg", title: "Teste 3" },
+      {
+        src: "/images/ImagesCarousel/checkplaca.jpg",
+        title: "FAZENDA",
+        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        cidade: "Rio de Janeiro - RJ",
+      },
+      {
+        src: "/images/ImagesCarousel/placahome.jpg",
+        title: "FAZENDA",
+        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        cidade: "Rio de Janeiro - RJ",
+      },
+      {
+        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        title: "FAZENDA",
+        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        cidade: "Rio de Janeiro - RJ",
+      },
     ],
     [
-      { src: "/images/ImagesCarousel/eficiencia.jpg", title: "Teste 1" },
-      { src: "/images/ImagesCarousel/clientes.jpg", title: "Teste 2" },
-      { src: "/images/ImagesCarousel/qualidade.jpg", title: "Teste 3" },
-      { src: "/images/ImagesCarousel/placadetalhe.jpg", title: "Teste 4" },
+      {
+        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        cidade: "Minas Gerais - MG",
+      },
+      {
+        src: "/images/ImagesCarousel/checkplaca.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        cidade: "Minas Gerais - MG",
+      },
+      {
+        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        title: "RESIDENCIAL",
+        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        cidade: "Minas Gerais - MG",
+      },
     ],
   ];
 
-  console.log(">>>>>>> ", imagesList[2][1].src);
+  const navScreen = {
+    0: "Tela 0",
+    1: "Tela 1",
+    2: "Tela 2",
+  };
 
   const renderizarDivs = () => {
     const divs = [];
@@ -59,6 +108,7 @@ function CarouselGroup() {
     );
 
     for (let i = 0; i < 3; i++) {
+      const scren = navScreen[1];
       divs.push(
         <div className={styles.containerItens}>
           <Carousel
@@ -79,12 +129,32 @@ function CarouselGroup() {
                     alt="Second slide"
                   />
                   <Carousel.Caption className={styles.infoStyle}>
-                    <p style={{ width: 110 }}>{imagesList[i][il].title}</p>
+                    <p>{imagesList[i][il].title}</p>
+                    <div className={styles.containerCity}>
+                      <h5 style={{ fontSize: 13 }}>
+                        {imagesList[i][il].cidade}
+                      </h5>
+                    </div>
+                    <div className={styles.containerSubTitle}>
+                      <h6 style={{ fontSize: 13 }}>
+                        {imagesList[i][il].subtitle}
+                      </h6>
+                    </div>
                   </Carousel.Caption>
                 </Carousel.Item>
               );
             })}
           </Carousel>
+          <div className={styles.containerButton}>
+            <Button
+              type={4}
+              //marginTop={"5.5%"}
+              heigth={45}
+              width={200}
+              text={"Confira"}
+              onClick={() => alert(i)}
+            />
+          </div>
         </div>
       );
     }
