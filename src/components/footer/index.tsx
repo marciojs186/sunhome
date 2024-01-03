@@ -11,7 +11,7 @@ export function Footer() {
     // </footer>
     <div className={styles.footerContainer}>
       <div className={styles.textContent}>
-        <p>SOLAR HOME - ENERGIA LIMPA, ECONOMIA E CONFORTO.</p>
+        <p>SOLAR META - ENERGIA LIMPA, ECONOMIA E CONFORTO.</p>
         <p>Fale conosco pelo Whatsapp.</p>
         <span>
           <div className={styles.imagem}>
@@ -26,7 +26,7 @@ export function Footer() {
         </span>
       </div>
       <footer className={styles.footer}>
-        <p>&copy; SOLAR HOME Todos os direitos reservados.</p>
+        <p>&copy; SOLAR META Todos os direitos reservados.</p>
       </footer>
     </div>
   );

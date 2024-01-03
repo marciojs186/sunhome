@@ -67,3 +67,20 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  .svgcontainer {
+    cursor: pointer; // Isso torna o cursor uma mão quando estiver sobre a imagem
+  
+    &:hover {
+     
+      .st0{fill:rgb(236, 41, 15);}
+      // Adicione estilos para o hover normal aqui
+    }
+  
+    &.hovered {
+      .st0{fill:rgb(236, 41, 15);}
+      // Adicione estilos para o hover quando o estado isHovered for verdadeiro
+      filter: brightness(0.8); // Um exemplo de alteração de cor usando o filtro de brilho
+    }
+  }
+ 

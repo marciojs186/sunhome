@@ -1,0 +1,49 @@
+.container{
+    padding: 10px;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    background-color: rgb(61, 65, 54);
+
+}
+
+.containerSlider{
+   height: auto;
+   padding: 0px 10px 20px 10px;
+   align-items: center;
+   background-color: rgb(61, 65, 54);
+}
+
+.containerTitle{
+    background-color: rgb(61, 65, 54);
+    flex-direction: column;
+    padding: 10px;
+    width: 20rem;
+    height: auto;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    display: flex;
+}
+
+.infoStyle{
+    h2{
+      font-size: 2rem;
+      font-weight: 700;
+      color: #EEE;
+    }
+
+    h5{
+      font-weight: 700;
+      color: #EEE;
+    }
+   
+    border-radius: 12px;
+  }
+  
+  .infoStyle :hover{
+    transition: 500ms;
+    font-weight: 700;
+    color: #FFF;
+  }

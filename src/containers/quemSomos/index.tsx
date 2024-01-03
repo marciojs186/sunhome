@@ -7,6 +7,10 @@ import styles from "./quemsomos.module.scss";
 export function QuemSomos() {
   return (
     <div className={styles.container}>
+      <div className={styles.containerTitulo}>
+        <h1 className={styles.h1}>QUEM SOMOS</h1>
+        <hr style={{ width: 150, color: "#FFF" }} />
+      </div>
       <div className={styles.containerImg}>
         <img
           src="/images/ImagesCarousel/placadetalhe.jpg"
@@ -22,7 +26,7 @@ export function QuemSomos() {
       <div className={styles.containerTitle}>
         <div className={styles.infoStyle}>
           <span>SOLAR META</span>
-          <hr style={{ width: "18%" }} />
+          <hr style={{ width: "18%", color: "#FFF" }} />
           <p>
             Empresa Paulistana com as melhores soluções em Energia Solar
             fotovoltaica. Soluções Sustentáveis e Eficientes em Geração de

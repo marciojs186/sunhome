@@ -11,6 +11,7 @@ import { Carossel } from "./components/caroussel";
 import { QuemSomos } from "./containers/quemSomos";
 import { Servicos } from "./containers/servicos";
 import { Orcamento } from "./containers/orcamentos";
+import { Obras } from "./containers/obras";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <QuemSomos />
         <Servicos />
         <Orcamento />
+        <Obras />
       </div>
       <Footer />
     </>

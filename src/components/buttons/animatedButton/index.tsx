@@ -62,7 +62,14 @@ export function Button({
       renderButton = (
         <button
           className={styles.fourth}
-          style={{ width: width, height: heigth, alignSelf: "center" }}
+          style={{
+            width: width,
+            height: heigth,
+            alignSelf: "center",
+            marginLeft: marginLeft,
+            marginTop: marginTop,
+            paddingLeft: paddingLeft,
+          }}
           onClick={onClick}
         >
           {text}

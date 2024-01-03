@@ -6,6 +6,15 @@
     background-color: rgb(72, 99, 28);
 }
 
+.containerTitulo{
+  width: 10%;
+  //background-color: red;
+  position: absolute;
+  left: 2%;
+ top: 122%;
+ 
+}
+
 .containerImg{
     width: 48%;
     height: 100%;
@@ -14,7 +23,7 @@
 
 .containerTitle{
     display: flex;
-   margin-left: 25%;
+    margin-left: 25%;
     padding: 0rem 0rem 0rem 3rem;
     margin-top: -1%;
     margin-right: 13%;
@@ -67,6 +76,11 @@
   }
   .h5{
     font-weight: 400;
+  }
+
+  .h1{
+    font-weight: 700;
+    color: #FFF
   }
 
 

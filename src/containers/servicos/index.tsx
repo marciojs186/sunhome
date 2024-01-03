@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./servicos.module.scss";
 
 export function Servicos() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.containerTitle}>
@@ -14,19 +16,25 @@ export function Servicos() {
         </div>
         <div className={styles.containerServicos}>
           <div className={styles.servico}>
-            <img
-              src="/images/placainstalar.svg"
-              style={{
-                width: 73,
-                height: 73,
-                marginTop: 30,
-              }}
-            />
+            <div
+              className={`svgcontainer ${isHovered ? "hovered" : ""}`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <img
+                src="/images/placainstalar.svg"
+                style={{
+                  width: 73,
+                  height: 73,
+                  marginTop: 30,
+                }}
+              />
+            </div>
             <h2 className={styles.h2}>Instalação</h2>
-            <h4>
+            <h5>
               Instalamos o seu sistema usando os melhores equipamentos do
               mercado.
-            </h4>
+            </h5>
           </div>
           <div className={styles.servico}>
             <img
@@ -38,10 +46,10 @@ export function Servicos() {
               }}
             />
             <h2 className={styles.h2}>Homologação</h2>
-            <h4>
-              Instalamos o seu sistema usando os melhores equipamentos do
-              mercado.
-            </h4>
+            <h5>
+              Cuidamos de todo o processo de legalização junto à distribuidora.
+              Sem dor de cabeça para você!
+            </h5>
           </div>
           <div className={styles.servico}>
             <img
@@ -53,10 +61,10 @@ export function Servicos() {
               }}
             />
             <h2 className={styles.h2}>Projeto</h2>
-            <h4>
-              Instalamos o seu sistema usando os melhores equipamentos do
-              mercado.
-            </h4>
+            <h5>
+              Elaboramos um projeto único e customizado para atender as suas
+              necessidades.
+            </h5>
           </div>
         </div>
       </div>
