@@ -62,3 +62,9 @@
     display: flex;
     justify-content: center;
 }
+
+.h6:hover{
+  transition: 500ms;
+  color: yellowgreen;
+  font-weight: 600;
+}

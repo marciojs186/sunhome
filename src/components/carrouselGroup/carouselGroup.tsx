@@ -3,12 +3,13 @@ import Carousel from "react-bootstrap/esm/Carousel";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Button } from "../buttons/animatedButton";
 import styles from "./carrousselGroup.module.scss";
+import { ImagesListProps, navegacaoProps } from "./carousel.types";
 
 function CarouselGroup() {
   const [indice, setIndice] = useState(true);
   const [theme, setTheme] = useState<string>("");
 
-  let imagesList = [
+  let imagesList: ImagesListProps = [
     [
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
@@ -71,10 +72,11 @@ function CarouselGroup() {
     ],
   ];
 
-  const navScreen = {
-    0: "Tela 0",
-    1: "Tela 1",
-    2: "Tela 2",
+  const navegar: navegacaoProps = {
+    0: "Tela 1",
+    1: "Tela 2",
+    2: "Tela 3",
+    default: "null",
   };
 
   const renderizarDivs = () => {
@@ -108,7 +110,6 @@ function CarouselGroup() {
     );
 
     for (let i = 0; i < 3; i++) {
-      const scren = navScreen[1];
       divs.push(
         <div className={styles.containerItens}>
           <Carousel
@@ -136,7 +137,7 @@ function CarouselGroup() {
                       </h5>
                     </div>
                     <div className={styles.containerSubTitle}>
-                      <h6 style={{ fontSize: 13 }}>
+                      <h6 className={styles.h6} style={{ fontSize: 13 }}>
                         {imagesList[i][il].subtitle}
                       </h6>
                     </div>
@@ -152,7 +153,7 @@ function CarouselGroup() {
               heigth={45}
               width={200}
               text={"Confira"}
-              onClick={() => alert(i)}
+              onClick={() => alert(navegar[i])}
             />
           </div>
         </div>
