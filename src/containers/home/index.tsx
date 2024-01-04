@@ -8,6 +8,7 @@ import { Orcamento } from "../orcamentos";
 import { QuemSomos } from "../quemSomos";
 import { Servicos } from "../servicos";
 import { Obras } from "../obras";
+import { ComoFunciona } from "../comoFunciona";
 import { Depoimentos } from "../depoimentos";
 import styles from "./home.module.scss";
 
@@ -39,6 +40,7 @@ export function Home() {
         <Servicos />
         <Orcamento />
         <Obras />
+        <ComoFunciona />
         <Depoimentos />
       </div>
       <Footer />

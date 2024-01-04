@@ -1,5 +1,4 @@
 import React from "react";
-import CarouselGroup from "../../components/carrouselGroup/carouselGroup";
 
 import styles from "./depoimentos.module.scss";
 
