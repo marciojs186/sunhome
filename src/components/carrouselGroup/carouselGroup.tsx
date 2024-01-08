@@ -125,7 +125,11 @@ function CarouselGroup() {
               return (
                 <Carousel.Item className={theme}>
                   <img
-                    style={{ width: "100%", height: "45vh", borderRadius: 5 }}
+                    style={{
+                      width: "100%",
+                      height: "45vh",
+                      borderRadius: 5,
+                    }}
                     src={imagesList[i][il].src}
                     alt="Second slide"
                   />

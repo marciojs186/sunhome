@@ -22,12 +22,13 @@ export function Footer() {
               height={25}
             />
           </div>
-          11 98085-1787
+          (11) 96460-6677
         </span>
       </div>
       <footer className={styles.footer}>
         <p>&copy; SOLAR META Todos os direitos reservados.</p>
       </footer>
+      <p>CNPJ: 48.227.659/0001-01</p>
     </div>
   );
 }

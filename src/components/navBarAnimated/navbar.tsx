@@ -42,7 +42,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
               position: "absolute",
             }}
           />
-          contato@solarhome.com.br
+          solarmetavolts@gmail.com
         </h6>
         {/* <h6 className={styles.li} onClick={() => {}}>
           <img
@@ -68,7 +68,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
               position: "absolute",
             }}
           />
-          (11) 98085-1787
+          (11) 96460-6677
         </h6>
         <h6 className={styles.li} style={{ minWidth: 100 }} onClick={() => {}}>
           <img
