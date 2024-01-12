@@ -26,6 +26,9 @@ export default function CarouselList() {
     {
       image1: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/checkplaca.jpg",
+        cliente: "Marcos Ribeiro",
+        post: "1 mês atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento:
@@ -33,6 +36,9 @@ export default function CarouselList() {
       },
       image2: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/placatelhado.jpg",
+        cliente: "Mario Goes",
+        post: "8 meses atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image02",
         depoimento:
@@ -40,6 +46,9 @@ export default function CarouselList() {
       },
       image3: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/checkplaca.jpg",
+        cliente: "Fabio Costa",
+        post: "2 meses atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento:
@@ -47,6 +56,9 @@ export default function CarouselList() {
       },
       image4: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/placahome.jpg",
+        cliente: "Mariana Sales",
+        post: "1 ano atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento: "teste de depoimento de satisfação do cliente!",
@@ -55,12 +67,18 @@ export default function CarouselList() {
     {
       image1: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/trabalhadorSolar.jpg",
+        cliente: "Robson Lobato",
+        post: "5 meses atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento: "teste de depoimento de satisfação do cliente!",
       },
       image2: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/checkplaca.jpg",
+        cliente: "Douglas Bonfin",
+        post: "1 mês atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image02",
         depoimento:
@@ -68,12 +86,18 @@ export default function CarouselList() {
       },
       image3: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/placahome.jpg",
+        cliente: "Eduardo Martins",
+        post: "12 meses atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento: "Atendimento super profissional e empresa muito pontual.",
       },
       image4: {
         image: "/images/ImagesCarousel/google.svg",
+        avatar: "/images/ImagesCarousel/trabalhadorSolar.jpg",
+        cliente: "Beatriz Colin",
+        post: "1 ano atrás",
         starfive: "/images/ImagesCarousel/starfive.png",
         text: "image01",
         depoimento:
@@ -87,20 +111,21 @@ export default function CarouselList() {
       <Carousel.Item key={index} className={theme}>
         <div className={styles.displayflex}>
           {Object.values(images).map((image, i) => (
-            <div>
+            <div className={styles.contentText}>
               <div className={styles.container}>
-                <h5
-                  style={{
-                    fontSize: 17,
-                    fontWeight: "700",
-                    position: "absolute",
-                    color: "rgb(66, 61, 61)",
-                    top: "12%",
-                    marginLeft: 29,
-                  }}
-                >
-                  Claudio Damasceno
-                </h5>
+                <span>{image.cliente}</span>
+                <div className={styles.containerAvatar}>
+                  <img
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      borderRadius: 55,
+                    }}
+                    src={image.avatar}
+                    alt="Second slide"
+                  />
+                </div>
+                <p className={styles.p}>{image.post}</p>
                 <img
                   style={{
                     width: "6%",
@@ -116,23 +141,14 @@ export default function CarouselList() {
                     width: "10%",
                     height: "7%",
                     position: "absolute",
-                    top: "30%",
+                    top: "27%",
                     marginRight: "10.5%",
                   }}
                   src={image.starfive}
                   alt="Second slide"
                 />
                 <div className={styles.containerText}>
-                  <h6
-                    style={{
-                      fontSize: 19,
-                      color: "rgb(112, 107, 107)",
-                      padding: "2%",
-                      fontWeight: "600",
-                    }}
-                  >
-                    {image.depoimento}
-                  </h6>
+                  <h6 className={styles.textDepoimento}>{image.depoimento}</h6>
                 </div>
               </div>
             </div>

@@ -12,14 +12,58 @@
   box-shadow: 0 0 2px 1px #01112b inset, 0 0 0 0 #01112b;
 }
 
+.containerAvatar {
+  width:4%;
+  height: 14%;
+  border-radius: 5px;
+  position: absolute;
+  color: rgb(66, 61, 61);
+  top: 8.2%;
+  margin-right: 17%;
+}
+
 .containerText{
   width: 95%;
-  height: 60%;
+  height: 62%;
   margin-right: 3%;
-  margin-top: 35%;
+  margin-top: 37%;
   display: flex;
   align-self: center;
   overflow-y: auto;
+}
+
+
+.contentText{
+  span{
+    font-size:17px;
+    width: 22%;
+    font-weight: 700;
+    position: absolute;
+    color: rgb(66, 61, 61);
+    top: 10%;
+    padding-left: 6%;
+    text-align: initial;
+  }
+
+  .p{
+    width: 22%;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    color: rgb(66, 61, 61);
+    top: 17%;
+    padding-left: 6%;
+    text-align: initial;
+    //marginRight: 5,
+  }
+
+  .textDepoimento{
+    font-size: 16px;
+    color: rgb(112, 107, 107);
+    padding: 2%;
+    font-weight: 500;
+  }
+ 
 }
 
 .imageItens{
