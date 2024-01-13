@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from "react";
-
+import { Button } from "../../components/buttons/animatedButton";
 import { ButtonFixed } from "../../components/buttons/buttonFixed";
 import styles from "./quemsomos.module.scss";
 
@@ -16,11 +16,24 @@ export function QuemSomos() {
         <img
           src="/images/ImagesCarousel/placadetalhe.jpg"
           style={{
-            width: "58vh",
-            height: "38vh",
+            width: "50vh",
+            height: "35vh",
             borderRadius: 10,
             position: "absolute",
             left: "18%",
+          }}
+        />
+        <img
+          src="/images/logoinsta.png"
+          style={{
+            width: "10vh",
+            height: "10vh",
+            borderRadius: 10,
+            position: "relative",
+            //top: "39%",
+            top: "25vh",
+            //left: "75%",
+            left: "171%",
           }}
         />
       </div>
@@ -37,6 +50,7 @@ export function QuemSomos() {
             Conte Conosco Para fazer o seu projeto Seja em sua Residência,
             Empresa ou Propriedade Rural. Contate-nos e Garanta sua Economia.
           </p>
+          <Button type={4} heigth={45} width={200} text={"Confira mais"} />
         </div>
       </div>
       <div className={styles.contentOrcamento}>
