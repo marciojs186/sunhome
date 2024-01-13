@@ -11,6 +11,7 @@ import { Obras } from "../obras";
 import { ComoFunciona } from "../comoFunciona";
 import { Depoimentos } from "../depoimentos";
 import styles from "./home.module.scss";
+import { ScrollToTopButton } from "../../components/buttonScrolTopScreen/buttonScrollTopScreen";
 
 export function Home() {
   return (
@@ -37,12 +38,14 @@ export function Home() {
           </div>
         </main>
         <QuemSomos />
+
         <Servicos />
         <Orcamento />
         <Obras />
         <ComoFunciona />
         <Depoimentos />
       </div>
+      <ScrollToTopButton />
       <Footer />
     </>
   );

@@ -54,7 +54,7 @@ export function Carossel() {
         <Carousel.Item className={theme}>
           <div className="unset-img full-bleed">
             <img
-              style={{ width: "100%", height: "100vh" }}
+              style={{ width: "100%", height: "85vh" }}
               src="/images/ImagesCarousel/checkplaca.jpg"
               alt="First slide"
             />
@@ -100,7 +100,7 @@ export function Carossel() {
         <Carousel.Item className={theme}>
           <div className="unset-img full-bleed">
             <img
-              style={{ width: "100%", height: "100vh" }}
+              style={{ width: "100%", height: "80vh" }}
               src="/images/ImagesCarousel/placadetalhe.jpg"
               alt="Second slide"
             />

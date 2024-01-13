@@ -2,30 +2,29 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 65vh;
+    height: 62vh;
     background-color: rgb(72, 99, 28);
+  //box-shadow: 0 0 10px 0 #3c7ee7 inset, 0 0 10px 4px #3c7ee7;
 }
 
 .containerTitulo{
   width: 10%;
-  //background-color: red;
   position: absolute;
-  left: 2%;
- top: 122%;
- 
+  left: 3%;
+  top: 95%;
 }
 
 .containerImg{
-    width: 48rem;
-    height: 100%;
-    padding: 5rem 0rem 0rem 0rem;
+    width: 48rem;  
+    padding: 6rem 0rem 0rem 0rem;
 }
 
 .containerTitle{
   display: flex;
-  margin-left: 25%;
-  padding: 0rem 0rem 0rem 3rem;
-  margin-top: -3%;
+  margin-left: 19%;
+  position: relative;
+  top: -8vh;
+  padding: 2rem 0rem 0rem 3rem;
   margin-right: 13%;
 }
 
@@ -34,7 +33,7 @@
     display: flex;
     padding: 10px;
     position: absolute;
-    top: 157%; 
+    top: 131%; 
   }
 
   .titleOrca{
@@ -56,24 +55,33 @@
     align-content: flex-end;
     justify-content: end;
   }
+
   .infoStyle{
     span{
       font-size: 2rem;
-      font-weight: 700;
-      color: #EEE;
+      font-weight: 600;
+      color: yellowgreen;
+
     }
     p{
-      font-size: 2;
+      font-size: 1rem;
       font-weight: 500;
       color: #EEE;
     }
+
+    .h1{
+      font-weight: 700;
+      color: yellowgreen;
+    }
+
     border-radius: 12px;
   }
   
   .infoStyle :hover{
-    transition: 500ms;
+    transition: 1000ms;
     color: #FFF;
   }
+  
   .h5{
     font-weight: 400;
   }

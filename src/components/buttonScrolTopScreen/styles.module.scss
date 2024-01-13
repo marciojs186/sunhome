@@ -1,0 +1,68 @@
+.scroll-to-top-button {
+  display: flex;
+  width: 10rem;
+  height: 3.8rem;
+  position: fixed;
+  justify-content: flex-end;
+  top: 77%;
+  bottom: 0%;
+  left: 86.8%;
+  right: 0%;
+  z-index: 11;
+  transition: 1.5s;
+  background-color: transparent;
+
+  
+  @media(max-width:1300px){
+    transition: 0.500s;
+    left: 84%;
+   }
+   @media(max-width:900px){
+    transition: 0.500s;
+    left: 79%;
+    top: 78%;
+   }
+   @media(max-width:750px){
+    transition: 0.500s;
+    left: 76.8%;
+   }
+   @media(max-width:600px){
+    transition: 0.500s;
+    left: 72%;
+   }
+   @media(max-width:470px){
+    transition: 0.500s;
+    left: 57%;
+   }
+
+   @media(max-height:700px){
+    transition: 0.500s;
+    top: 74%
+   }
+  
+    &.visible {
+      opacity: 1;
+    }
+  
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  .buttonStyle{
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0ch;
+  }
+
+  .lottieStyle{
+    height: 10vh;
+    width: 10vh;
+  }
+
+  

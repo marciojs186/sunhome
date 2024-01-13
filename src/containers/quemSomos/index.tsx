@@ -8,9 +8,11 @@ export function QuemSomos() {
   return (
     <div className={styles.container}>
       <div className={styles.containerTitulo}>
-        <h1 className={styles.h1}>QUEM</h1>
-        <h1 className={styles.h1}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOMOS</h1>
-        <hr style={{ width: 150, color: "#FFF" }} />
+        <div className={styles.infoStyle}>
+          <h1 className={styles.h1}>QUEM</h1>
+          <h1 className={styles.h1}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOMOS</h1>
+        </div>
+        <hr style={{ width: 200, color: "#FFF" }} />
       </div>
       <div className={styles.containerImg}>
         <img
@@ -20,7 +22,8 @@ export function QuemSomos() {
             height: "35vh",
             borderRadius: 10,
             position: "absolute",
-            left: "18%",
+            left: "19%",
+            top: "85%",
           }}
         />
         <img
@@ -28,19 +31,16 @@ export function QuemSomos() {
           style={{
             width: "10vh",
             height: "10vh",
-            borderRadius: 10,
-            position: "relative",
-            //top: "39%",
-            top: "25vh",
-            //left: "75%",
-            left: "171%",
+            position: "absolute",
+            top: "110%",
+            marginLeft: "37.7%",
           }}
         />
       </div>
       <div className={styles.containerTitle}>
         <div className={styles.infoStyle}>
           <span>SOLAR META</span>
-          <hr style={{ width: "18%", color: "#FFF" }} />
+          <hr style={{ width: "26%", color: "#FFF" }} />
           <p>
             Empresa Paulistana com as melhores soluções em Energia Solar
             fotovoltaica. Soluções Sustentáveis e Eficientes em Geração de
