@@ -7,7 +7,7 @@
 
 .containerTitle{
   flex-direction: column;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   width: 100%;
   height: auto;
   align-items: center;
@@ -30,4 +30,10 @@
   }
  
   border-radius: 12px;
+}
+
+.infoStyle :hover{
+  transition: 500ms;
+  font-weight: 700;
+  color: yellowgreen;
 }
