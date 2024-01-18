@@ -11,6 +11,26 @@ export function Orcamento() {
   return (
     <div className={styles.container}>
       <div className={styles.leftContent}>
+        <div className={styles.infoStyle}>
+          <div className={styles.containerTop}>
+            <h2 className={styles.h6}>
+              Faça seu projeto de energia solar com a gente!
+            </h2>
+            <img
+              src="/images/lampadaecogreen.png"
+              style={{
+                width: "3%",
+                borderRadius: 17,
+                position: "absolute",
+                top: 41,
+              }}
+            />
+            <h6 style={{ color: "#FFF" }}>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Economize
+              até 95% na sua conta de luz
+            </h6>
+          </div>
+        </div>
         <img
           src="/images/solar-meta.png"
           style={{
@@ -78,7 +98,7 @@ export function Orcamento() {
             </div>
             <br />
             <Input
-              height={130}
+              height={100}
               placeholder={"Resumo"}
               name={"Observações"}
               width={350}

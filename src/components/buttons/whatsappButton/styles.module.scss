@@ -49,7 +49,8 @@
 
   &:hover{
     display: flex;
-    height: 3.8rem;
+    height: 4rem;
+    border-radius: 5px;
     width: 10.2rem;
     background-image: url('../../../../public/Icons/whatsappicon-hover.svg');
     @media(max-width:500px){

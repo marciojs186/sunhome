@@ -14,19 +14,19 @@ function CarouselGroup() {
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
       },
       {
         src: "/images/ImagesCarousel/checkplaca.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
       },
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 8 KWp",
+        description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
       },
     ],
@@ -34,19 +34,19 @@ function CarouselGroup() {
       {
         src: "/images/ImagesCarousel/checkplaca.jpg",
         title: "FAZENDA",
-        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
       },
       {
         src: "/images/ImagesCarousel/placahome.jpg",
         title: "FAZENDA",
-        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
       },
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
         title: "FAZENDA",
-        subtitle: "Projeto Fotovoltaico de 11 KWp",
+        description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
       },
     ],
@@ -54,19 +54,19 @@ function CarouselGroup() {
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
         src: "/images/ImagesCarousel/checkplaca.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
         src: "/images/ImagesCarousel/placadetalhe.jpg",
         title: "RESIDENCIAL",
-        subtitle: "Projeto Fotovoltaico de 42 KWp",
+        description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
     ],
@@ -142,7 +142,7 @@ function CarouselGroup() {
                     </div>
                     <div className={styles.containerSubTitle}>
                       <h6 className={styles.h6} style={{ fontSize: 13 }}>
-                        {imagesList[i][il].subtitle}
+                        {imagesList[i][il].description}
                       </h6>
                     </div>
                   </Carousel.Caption>

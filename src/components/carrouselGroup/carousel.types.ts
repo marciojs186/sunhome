@@ -6,7 +6,7 @@ export type navegacaoProps = {
 type Image = {
   src: string;
   title: string;
-  subtitle: string;
+  description: string;
   cidade: string;
 };
 export type ImagesListProps = Image[][];

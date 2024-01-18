@@ -1,3 +1,5 @@
+import React, { useRef } from "react";
+
 import { ButtonFixed } from "../../components/buttons/buttonFixed";
 import { WhatsAppButton } from "../../components/buttons/whatsappButton";
 import { Carossel } from "../../components/caroussel";
@@ -14,6 +16,14 @@ import styles from "./home.module.scss";
 import { ScrollToTopButton } from "../../components/buttonScrolTopScreen/buttonScrollTopScreen";
 
 export function Home() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = () => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <ButtonFixed
@@ -22,7 +32,7 @@ export function Home() {
         heigth={35}
         fontSize={18}
         text={"Solicite Orçamento"}
-        onClick={() => alert("clicou")}
+        onClick={scrollToSection}
       />
       <div className="App">
         <Header />
@@ -38,9 +48,10 @@ export function Home() {
           </div>
         </main>
         <QuemSomos />
-
         <Servicos />
-        <Orcamento />
+        <div ref={sectionRef}>
+          <Orcamento />
+        </div>
         <Obras />
         <ComoFunciona />
         <Depoimentos />

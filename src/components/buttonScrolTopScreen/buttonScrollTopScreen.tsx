@@ -1,11 +1,30 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.scss"; // Crie um arquivo CSS para estilizar o botão
-import { ArrowUp, Arrow_up } from "../../lottie";
+import { ArrowUp, Arrow_up, Zap_anin } from "../../lottie";
 
-export const ScrollToTopButton = () => {
+interface IProps {
+  iconName?: keyof IIconType;
+}
+interface IIconType {
+  arrow: string;
+  arrow_up: string;
+  zap: string;
+}
+
+export function ScrollToTopButton({ iconName = "arrow_up" }: IProps) {
   const [isVisible, setIsVisible] = useState(false);
   const lottieRef: any = useRef(null);
+
+  const imageScrool: IIconType = {
+    arrow: ArrowUp,
+    arrow_up: Arrow_up,
+    zap: Zap_anin,
+  };
+
+  const iconType = imageScrool[iconName];
+
+  console.log(iconType);
 
   useEffect(() => {
     const animateButton = () => {
@@ -49,7 +68,7 @@ export const ScrollToTopButton = () => {
         <div className={styles.lottieStyle}>
           <Player
             ref={lottieRef}
-            src={Arrow_up}
+            src={iconType}
             className="player"
             loop={false}
             autoplay={false}
@@ -59,4 +78,4 @@ export const ScrollToTopButton = () => {
       </button>
     </div>
   );
-};
+}
