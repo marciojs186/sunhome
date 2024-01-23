@@ -12,19 +12,19 @@ function CarouselGroup() {
   let imagesList: ImagesListProps = [
     [
       {
-        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        src: "/images/imagensYouSolar/img_00.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
       },
       {
-        src: "/images/ImagesCarousel/checkplaca.jpg",
+        src: "/images/imagensYouSolar/img_01.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
       },
       {
-        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        src: "/images/imagensYouSolar/img_quadro_00.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 8 KWp",
         cidade: "São Paulo - SP",
@@ -32,19 +32,19 @@ function CarouselGroup() {
     ],
     [
       {
-        src: "/images/ImagesCarousel/checkplaca.jpg",
+        src: "/images/imagensYouSolar/img_03.jpg",
         title: "FAZENDA",
         description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
       },
       {
-        src: "/images/ImagesCarousel/placahome.jpg",
+        src: "/images/imagensYouSolar/img_04.jpg",
         title: "FAZENDA",
         description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
       },
       {
-        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        src: "/images/imagensYouSolar/img_quadro_01.jpg",
         title: "FAZENDA",
         description: "Projeto Fotovoltaico de 11 KWp",
         cidade: "Rio de Janeiro - RJ",
@@ -52,19 +52,19 @@ function CarouselGroup() {
     ],
     [
       {
-        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        src: "/images/imagensYouSolar/img_05.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
-        src: "/images/ImagesCarousel/checkplaca.jpg",
+        src: "/images/imagensYouSolar/img_06.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
-        src: "/images/ImagesCarousel/placadetalhe.jpg",
+        src: "/images/imagensYouSolar/img_quadro_02.jpg",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",

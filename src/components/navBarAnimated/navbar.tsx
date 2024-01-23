@@ -2,7 +2,12 @@
 import { useState } from "react";
 import styles from "./navbar.module.scss";
 
-export function NavbarAnimated({ marginLeft = 5 }) {
+type IProps = {
+  marginLeft?: number;
+  data?: () => void;
+};
+
+export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
   const [visibleList, setVisibleList] = useState(false);
   const [viewClose, setViewClose] = useState(false);
 
@@ -42,7 +47,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
               position: "absolute",
             }}
           />
-          solarmetavolts@gmail.com
+          contato@solarmeta.com.br
         </h6>
         {/* <h6 className={styles.li} onClick={() => {}}>
           <img
@@ -99,7 +104,7 @@ export function NavbarAnimated({ marginLeft = 5 }) {
           />
         </div>
 
-        <h6 className={styles.li} onClick={() => {}}>
+        <h6 className={styles.li} onClick={data}>
           <div className={styles.orcamento}> Pedir Orçamento</div>
         </h6>
         <div

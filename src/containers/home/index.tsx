@@ -18,11 +18,11 @@ import { ScrollToTopButton } from "../../components/buttonScrolTopScreen/buttonS
 export function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = () => {
+  function scrollToSection() {
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }
 
   return (
     <>
@@ -35,7 +35,7 @@ export function Home() {
         onClick={scrollToSection}
       />
       <div className="App">
-        <Header />
+        <Header data={scrollToSection} />
         <main className={styles.main}>
           <div className={styles.headerBase}>
             <div>

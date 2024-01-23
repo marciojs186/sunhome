@@ -55,7 +55,7 @@ export function Carossel() {
           <div className="unset-img full-bleed">
             <img
               style={{ width: "100%", height: "85vh" }}
-              src="/images/ImagesCarousel/checkplaca.jpg"
+              src="/images/imagensYouSolar/img_03.jpg"
               alt="First slide"
             />
           </div>
@@ -72,7 +72,7 @@ export function Carossel() {
           <div className="unset-img full-bleed">
             <img
               style={{ width: "100%", height: "100vh" }}
-              src="/images/ImagesCarousel/placahome.jpg"
+              src="/images/imagensYouSolar/img_04.jpg"
               alt="Second slide"
             />
           </div>
@@ -85,7 +85,7 @@ export function Carossel() {
           <div className="unset-img full-bleed">
             <img
               style={{ width: "100%", height: "100vh" }}
-              src="/images/ImagesCarousel/placatelhado.jpg"
+              src="/images/imagensYouSolar/img_drone_00.jpg"
               alt="Second slide"
             />
           </div>
@@ -101,7 +101,7 @@ export function Carossel() {
           <div className="unset-img full-bleed">
             <img
               style={{ width: "100%", height: "80vh" }}
-              src="/images/ImagesCarousel/placadetalhe.jpg"
+              src="/images/imagensYouSolar/img_05.jpg"
               alt="Second slide"
             />
           </div>

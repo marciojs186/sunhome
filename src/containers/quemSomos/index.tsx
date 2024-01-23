@@ -16,7 +16,7 @@ export function QuemSomos() {
       </div>
       <div className={styles.containerImg}>
         <img
-          src="/images/ImagesCarousel/placadetalhe.jpg"
+          src="/images/imagensYouSolar/img_03.jpg"
           style={{
             width: "50vh",
             height: "35vh",
