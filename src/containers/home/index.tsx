@@ -47,7 +47,7 @@ export function Home() {
             <WhatsAppButton />
           </div>
         </main>
-        <QuemSomos />
+        <QuemSomos data={scrollToSection} />
         <Servicos />
         <div ref={sectionRef}>
           <Orcamento />

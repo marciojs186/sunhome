@@ -4,7 +4,11 @@ import { Button } from "../../components/buttons/animatedButton";
 import { ButtonFixed } from "../../components/buttons/buttonFixed";
 import styles from "./quemsomos.module.scss";
 
-export function QuemSomos() {
+type IProps = {
+  data?: () => void;
+};
+
+export function QuemSomos({ data }: IProps) {
   return (
     <div className={styles.container}>
       <div className={styles.containerTitulo}>
@@ -59,6 +63,7 @@ export function QuemSomos() {
           <h5 className={styles.h5}>Energia que dá volts!</h5>
           <div className={styles.buttonOrca}>
             <ButtonFixed
+              onClick={data}
               type={4}
               width={150}
               heigth={42}
