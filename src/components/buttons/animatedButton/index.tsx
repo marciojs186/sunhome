@@ -107,6 +107,26 @@ export function Button({
         </button>
       );
       break;
+    case 7:
+      renderButton = (
+        <button
+          className={styles.seven}
+          style={{
+            width: width,
+            height: heigth,
+            alignSelf: "center",
+            fontSize: fontSize,
+            background: "transparent",
+            marginLeft: marginLeft,
+            marginTop: marginTop,
+            paddingLeft: paddingLeft,
+          }}
+          onClick={onClick}
+        >
+          {text}
+        </button>
+      );
+      break;
   }
   return renderButton;
 }

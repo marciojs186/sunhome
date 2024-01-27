@@ -179,3 +179,36 @@
   color: rgb(255, 255, 255);
   background-position: 0 100%;
 }
+
+.seven {
+  border-color: transparent;
+  color: rgb(211, 199, 199);
+  position: relative;
+  border-bottom-color: yellowgreen;
+  font-weight: 400;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
+}
+.seven:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  //background: rgba(255,255,255,10);
+  z-index: -1;
+  -webkit-transition: width 100ms ease-in-out;
+  transition: width 100ms ease-in-out;
+}
+.seven:hover {
+  color: yellowgreen;
+}
+.seven:hover:after {
+  width: 110%;
+}

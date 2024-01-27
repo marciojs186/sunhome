@@ -4,6 +4,8 @@ import { Button } from "../../components/buttons/animatedButton";
 import { ButtonFixed } from "../../components/buttons/buttonFixed";
 import styles from "./quemsomos.module.scss";
 
+import { Link } from "react-router-dom";
+
 type IProps = {
   data?: () => void;
 };
@@ -54,7 +56,9 @@ export function QuemSomos({ data }: IProps) {
             Conte Conosco Para fazer o seu projeto Seja em sua Residência,
             Empresa ou Propriedade Rural. Contate-nos e Garanta sua Economia.
           </p>
-          <Button type={4} heigth={45} width={200} text={"Confira mais"} />
+          <Link to={"/quem-somos"}>
+            <Button type={4} heigth={45} width={200} text={"Confira mais"} />
+          </Link>
         </div>
       </div>
       <div className={styles.contentOrcamento}>

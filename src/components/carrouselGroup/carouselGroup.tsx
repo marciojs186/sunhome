@@ -52,19 +52,25 @@ function CarouselGroup() {
     ],
     [
       {
-        src: "/images/imagensYouSolar/img_05.jpg",
+        src: "/images/imagensYouSolar/img_you_29.png",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
-        src: "/images/imagensYouSolar/img_06.jpg",
+        src: "/images/imagensYouSolar/img_you_obra.png",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",
       },
       {
-        src: "/images/imagensYouSolar/img_quadro_02.jpg",
+        src: "/images/imagensYouSolar/img_you_31.png",
+        title: "RESIDENCIAL",
+        description: "Projeto Fotovoltaico de 42 KWp",
+        cidade: "Minas Gerais - MG",
+      },
+      {
+        src: "/images/imagensYouSolar/img_you_06.png",
         title: "RESIDENCIAL",
         description: "Projeto Fotovoltaico de 42 KWp",
         cidade: "Minas Gerais - MG",

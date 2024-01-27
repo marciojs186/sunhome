@@ -30,7 +30,11 @@ export function SubHeader() {
     >
       <div className={styles.headerContainer}>
         <div className={styles.containerButton}>
-          <img src="/images/solar-meta.png" alt="Satisfação" width={"11%"} />
+          <img
+            src="/images/solar-meta_text_black.png"
+            alt="Satisfação"
+            width={"11%"}
+          />
           <img
             src="/images/banho.svg"
             style={{
