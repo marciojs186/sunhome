@@ -63,18 +63,18 @@ export function QuemSomos({ data }: IProps) {
       </div>
       <div className={styles.contentOrcamento}>
         <div className={styles.titleOrca}>
-          <h2>Solicite um orçamento</h2>
+          <h2 className={styles.h2}>Solicite um orçamento</h2>
           <h5 className={styles.h5}>Energia que dá volts!</h5>
-          <div className={styles.buttonOrca}>
-            <ButtonFixed
-              onClick={data}
-              type={4}
-              width={150}
-              heigth={42}
-              marginLeft={"80%"}
-              text={"Orçamento"}
-            />
-          </div>
+        </div>
+        <div className={styles.buttonOrca}>
+          <ButtonFixed
+            onClick={data}
+            type={4}
+            width={150}
+            heigth={42}
+            marginLeft={"80%"}
+            text={"Orçamento"}
+          />
         </div>
         <img
           src="/images/painelSol.jpg"

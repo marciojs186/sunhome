@@ -12,6 +12,13 @@
   position: absolute;
   left: 3%;
   top: 95%;
+  transition: .5s;
+}
+
+.containerTitulo:hover { 
+  transition: .5s;
+  filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
+  transform: scale(1.03);
 }
 
 .containerImg{
@@ -37,12 +44,18 @@
   }
 
   .titleOrca{
-    width: 65%;
+    width: auto;
+    height: auto;
     color: #EEE;
     margin-top: 2.2%;
     position: relative;
     left: 23%;
     z-index: 1;
+  }
+
+  .titleOrca :hover { 
+    transition: .5s;
+    transform: scale(1.05);
   }
 
   .buttonOrca{
@@ -70,7 +83,7 @@
     }
 
     .h1{
-      font-weight: 700;
+      font-weight: 600;
       color: yellowgreen;
     }
 
@@ -90,7 +103,21 @@
   .h5{
     font-weight: 400;
     color: yellowgreen;
-    text-shadow: 1px 1px 1px yellowgreen;
+    //text-shadow: 1px 1px 1px yellowgreen;
+    transition: .5s;
+  }
+
+  .h5 :hover{
+    transition: .5s;
+    font-weight: 800;
+  }
+
+  .h2{
+    transition: .5s;
+  }
+
+  .h2 :hover{
+    transition: 1000ms;
   }
 
 

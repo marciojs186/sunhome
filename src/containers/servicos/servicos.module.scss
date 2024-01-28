@@ -27,7 +27,16 @@
 
  text-align: center;
 
+ div{
+  transition: .5s;
+ }
+
 }
+
+.containerServicos :hover{
+   transition: .5s;
+   transform: scale(1.05);
+ }
 
 .servico{
   width: 30%;
@@ -37,10 +46,15 @@
   border-radius: 30px;
   background: rgb(231, 224, 224);
   flex: 1;
+
+  img{
+    transition: .5s;
+   }
 }
 
-.servico:hover{
-  background-color: rgb(204, 197, 197);
+.servico :hover{
+  transition: .5s;
+  transform: scale(1.07)
 }
 
 .infoStyle{
@@ -69,7 +83,7 @@
   }
 
   .svgcontainer {
-    cursor: pointer; // Isso torna o cursor uma mão quando estiver sobre a imagem
+    cursor: pointer; 
   
     &:hover {
      
