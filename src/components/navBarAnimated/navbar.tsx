@@ -20,6 +20,12 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
     }, time);
   };
 
+  let url = "https://api.whatsapp.com/send?phone=5511986797419";
+
+  const goToWhats = () => {
+    window.open(url);
+  };
+
   return (
     <div style={{ marginLeft: marginLeft }}>
       <ul className={styles.ul}>
@@ -75,7 +81,7 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
           />
           (11) 96460-6677
         </h6>
-        <h6 className={styles.li} style={{ minWidth: 100 }} onClick={() => {}}>
+        <h6 className={styles.li} style={{ minWidth: 100 }} onClick={goToWhats}>
           <img
             src="/images/whatWhite.svg"
             style={{
