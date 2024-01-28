@@ -3,10 +3,30 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./carousel.module.scss";
 import { AiFillRightSquare, AiFillLeftSquare } from "react-icons/ai";
+import { GetImagesCarousel } from "./api/getImages";
 
 export function Carossel() {
   const [theme, setTheme] = useState("");
   const [indice, setIndice] = useState(true);
+  const [data, setData] = useState<ICarousel[]>();
+
+  const getImages = async () => {
+    const dados = await GetImagesCarousel();
+    setData(dados);
+    console.log("Data resposta: ", dados);
+  };
+  interface ICarousel {
+    _id: string;
+    title: string;
+    subtitle: string;
+    img_id: string;
+    imageName: string;
+    imagelink: string;
+  }
+
+  useEffect(() => {
+    getImages();
+  }, []);
 
   const nextIcon = (
     <span>
@@ -51,68 +71,21 @@ export function Carossel() {
         indicators={false}
         onSelect={() => ResetValues()}
       >
-        <Carousel.Item className={theme}>
-          <div className="unset-img full-bleed">
-            <img
-              style={{ width: "100%", height: "85vh" }}
-              src="/images/imagensYouSolar/img_03.jpg"
-              alt="First slide"
-            />
-          </div>
-          <Carousel.Caption className={styles.infoStyle}>
-            <span>Excelência na Instalação</span>
-            <p>
-              Instaladores com mais de 20 anos de experiência em aquecimento
-              solar e processos planejados para garantir bom funcionamento e
-              segurança.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className={theme}>
-          <div className="unset-img full-bleed">
-            <img
-              style={{ width: "100%", height: "100vh" }}
-              src="/images/imagensYouSolar/img_04.jpg"
-              alt="Second slide"
-            />
-          </div>
-          <Carousel.Caption className={styles.infoStyle}>
-            <span>Atendimento em toda grande São Paulo</span>
-            <p>Atendimento personalizado e com garantia de satisfação.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className={theme}>
-          <div className="unset-img full-bleed">
-            <img
-              style={{ width: "100%", height: "100vh" }}
-              src="/images/imagensYouSolar/img_drone_00.jpg"
-              alt="Second slide"
-            />
-          </div>
-          <Carousel.Caption className={styles.infoStyle}>
-            <span>A quase 10 anos no mercado</span>
-            <p>
-              Confie em quem tem experiência no mercado e sempre oferece o
-              melhor para seus clientes.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className={theme}>
-          <div className="unset-img full-bleed">
-            <img
-              style={{ width: "100%", height: "80vh" }}
-              src="/images/imagensYouSolar/img_05.jpg"
-              alt="Second slide"
-            />
-          </div>
-          <Carousel.Caption className={styles.infoStyle}>
-            <span>Clientes 100% satisfeito e felizes</span>
-            <p>
-              Uma equipe a disposição sempre que seu negócio precisar de um
-              socorro.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {data?.map((item) => (
+          <Carousel.Item key={item._id} className={theme}>
+            <div className="unset-img full-bleed">
+              <img
+                style={{ width: "100%", height: "89vh" }}
+                src={item.imagelink}
+                alt="Carousel Slide"
+              />
+            </div>
+            <Carousel.Caption className={styles.infoStyle}>
+              <span>{item.title}</span>
+              <p>{item.subtitle}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </>
   );
