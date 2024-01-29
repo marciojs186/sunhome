@@ -10,6 +10,10 @@ import { Footer } from "../../components/footer";
 import { ScrollToTopButton } from "../../components/buttonScrolTopScreen/buttonScrollTopScreen";
 
 export function SomosMais() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div style={{ position: "absolute", top: 75, left: 85 }}>
