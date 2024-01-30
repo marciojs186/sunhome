@@ -2,6 +2,8 @@
 import { useState } from "react";
 import styles from "./navbar.module.scss";
 
+import { Link } from "react-router-dom";
+
 type IProps = {
   marginLeft?: number;
   data?: () => void;
@@ -33,9 +35,9 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
           <img
             src="/images/googleWhite.svg"
             style={{
-              marginTop: -0.4,
+              marginTop: -0.3,
               marginLeft: -25,
-              width: 17,
+              width: 16,
               height: 19,
               position: "absolute",
             }}
@@ -55,32 +57,21 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
           />
           contato@solarmeta.com.br
         </h6>
-        {/* <h6 className={styles.li} onClick={() => {}}>
-          <img
-            src="/images/phoneWhite.svg"
-            style={{
-              marginTop: 1,
-              marginLeft: -29,
-              width: 24,
-              height: 23,
-              position: "absolute",
-            }}
-          />
-          (11) 9999-9999
-        </h6> */}
-        <h6 className={styles.li} onClick={() => {}}>
-          <img
-            src="/images/smartphoneIcon.svg"
-            style={{
-              marginTop: -1,
-              marginLeft: -25,
-              width: 21,
-              height: 20,
-              position: "absolute",
-            }}
-          />
-          (11) 96460-6677
-        </h6>
+        <Link to={"/Solucoes"} style={{ color: "transparent" }}>
+          <h6 className={styles.li}>
+            <img
+              src="/images/solucao_placa.svg"
+              style={{
+                marginTop: -1,
+                marginLeft: -29,
+                width: 21,
+                height: 20,
+                position: "absolute",
+              }}
+            />
+            Soluções
+          </h6>
+        </Link>
         <h6 className={styles.li} style={{ minWidth: 100 }} onClick={goToWhats}>
           <img
             src="/images/whatWhite.svg"
@@ -104,7 +95,6 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
               background: "white",
               width: 31,
               height: 30,
-              //marginLeft: 15,
               position: "absolute",
             }}
           />
@@ -130,7 +120,6 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
             hidden={!visibleList}
           >
             <h6 className={styles.listItens}>Sobre nós</h6>
-            <h6 className={styles.listItens}>Fale conosco</h6>
             <h6 className={styles.listItens}>Fale conosco</h6>
             <h6 className={styles.listItens}>Fale conosco</h6>
             <h6 className={styles.listItens}>Fale conosco</h6>

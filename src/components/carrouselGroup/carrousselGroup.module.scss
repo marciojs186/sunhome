@@ -29,7 +29,15 @@
   flex-direction: column;
   top: 66px;
   justify-content: center;
+  transition: .5s;
 }
+
+.containerSubTitle:hover {
+  transition: .5s;
+  //filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
+  transform: scale(1.03);
+}
+
 .containerCity{ 
   width: 100%;
   flex-direction: column;
