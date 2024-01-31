@@ -47,7 +47,7 @@ export function Solucoes({ data }: IProps) {
       />
       <div className={styles.containerImg}>
         <img
-          src="/images/sistema-on-grid.png"
+          src="/images/sistema-on-grid-green.png"
           style={{
             width: "40%",
             padding: "1%",
@@ -74,7 +74,7 @@ export function Solucoes({ data }: IProps) {
         />
         <div className={styles.containerImg}>
           <img
-            src="/images/sistema-off-grid.png"
+            src="/images/sistema-off-grid-musgo.png"
             style={{
               width: "40%",
               padding: "1%",
@@ -103,7 +103,7 @@ export function Solucoes({ data }: IProps) {
         />
         <div className={styles.containerImg}>
           <img
-            src="/images/sistema-hibrido.png"
+            src="/images/sistema-hibrido-green.png"
             style={{
               width: "40%",
               borderRadius: 10,
