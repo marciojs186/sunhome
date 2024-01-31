@@ -1,18 +1,67 @@
 .container{
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 80vh;
-    background-color: rgb(72, 99, 28);
+    padding-top: 10%;
+    height: auto;
+    background-color: rgb(61, 65, 54);
 }
 
+.containerTitulo{
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  transition: .5s;
+}
 
 .containerImg{
   display: flex;
    width: 100%;
+   margin-top: 0%;
    justify-content: center;
-   
+  filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
 }
+
+.containerImg :hover {
+  
+  transition: .5s;
+  filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
+  transform: scale(1.03);
+}
+
+.h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #EEE;
+    transition: .5s;
+}
+
+.h1:hover {
+  transition: .5s;
+  transform: scale(1.05);
+  font-weight: 400;
+  font-size: 4rem;
+  color: yellowgreen;
+  filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
+}
+
+.h2{
+  font-size: 4rem;
+  font-weight: 400;
+  color: #EEE;
+  transition: .5s;
+}
+
+.h2:hover {
+  transition: .5s;
+  transform: scale(1.05);
+  font-weight: 400;
+  font-size: 4rem;
+  color:  rgb(61, 65, 54);
+  filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
+
+}
+
 
 
 
