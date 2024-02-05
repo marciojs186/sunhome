@@ -44,7 +44,11 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
           />
           Google Reviews
         </h6>
-        <h6 className={styles.li} style={{ minWidth: 220 }} onClick={() => {}}>
+        <h6
+          className={styles.li}
+          style={{ minWidth: 220, marginLeft: 38 }}
+          onClick={() => {}}
+        >
           <img
             src="/images/emailBranco.svg"
             style={{
@@ -89,7 +93,7 @@ export function NavbarAnimated({ marginLeft = 5, data }: IProps) {
           <img
             src="/images/icon-phone.png"
             style={{
-              marginTop: -6.5,
+              marginTop: -10.6,
               padding: 4,
               borderRadius: 8,
               background: "white",

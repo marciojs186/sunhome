@@ -104,7 +104,7 @@ export function SomosMais() {
           style={{
             position: "absolute",
             marginTop: "-3.3%",
-            fontSize: 19,
+            fontSize: 18,
             color: "rgb(211, 199, 199)",
             width: "62%",
           }}
@@ -115,10 +115,10 @@ export function SomosMais() {
         </h5>
         <div className={styles.imgsSides}>
           <img
-            src="/images/you_solar_placa.png"
+            src="/images/imagensYouSolar/img_05.jpg"
             alt="Satisfação"
-            width={"30%"}
-            height={"30%"}
+            width={"33.5%"}
+            // height={"45%"}
             style={{
               marginRight: 25,
               background: "yellowgreen",
@@ -126,10 +126,10 @@ export function SomosMais() {
             }}
           />
           <img
-            src="/images/you_solar_placa.png"
+            src="/images/imagensYouSolar/img_04.jpg"
             alt="Satisfação"
-            width={"30%"}
-            height={"30%"}
+            width={"33.5%"}
+            // height={"30%"}
             style={{
               marginLeft: 25,
               background: "yellowgreen",

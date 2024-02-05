@@ -1,7 +1,8 @@
-
 .headerContainer{
-  height: 2.6rem;
+  height: auto;
+  align-self: center;
   align-items: center;
+  padding-bottom: 8px;
   position: fixed;
   color: #12e;
   background-color: rgb(72, 99, 28);
@@ -11,7 +12,7 @@
   top: 0;
   left: 0;
   right: 0;
- transition: 0.8s;
+  transition: 0.8s;
   z-index: 10;
 
  @media (max-width: 499px){
@@ -31,7 +32,6 @@
   background-color: rgba(0, 38, 109, 0.5);
   z-index: 10;
 
-
   @media (max-width: 500px){
     display: none;
   }
@@ -44,7 +44,6 @@
   height: 6rem;
   margin: 0 auto;
   padding: 0 2rem;
-
   display: flex;
   align-items: center;
 
